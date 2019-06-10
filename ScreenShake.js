@@ -19,7 +19,7 @@ function ScreenShake() {
 
 
 		// update(camera) must be called in the loop function of the renderer,
-		// it will repositioned the camera according to the requested shaking.
+		// it will re-position the camera according to the requested shaking.
 		update: function update(camera) {
 			if ( this.enabled == true ) {
 				const now = Date.now();
