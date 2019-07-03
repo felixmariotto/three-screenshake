@@ -1,6 +1,7 @@
 # three-screenshake
-a screen shake tool for three.js
+a screen shake tool for three.js   
 
+example here : https://jsfiddle.net/e4h931co/
 
 
 # how to use it
