@@ -32,7 +32,7 @@ if (screenShake.enabled == true) {
 ```
    
 
-in an event listener or whatever part of your code must create a screen shake :  
+in an event listener or any part of your code that must create a screen shake :  
 ```javascript
 screenShake.shake( camera, new THREE.Vector3(0.1, 0, 0), 300 /* ms */ );
 ```
