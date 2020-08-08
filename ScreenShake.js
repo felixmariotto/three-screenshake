@@ -11,26 +11,20 @@ function getQuadra(t) {
 // 0 and 1, then the second call it again with a negative indice between
 // 0 and -1, etc. Variable position will get the sign of the indice, and
 // get wavy.
-function  computePosition(interval) {
-
-	let position = 0;
-
+function computePosition(interval) {
 	if (interval < 0.4) {
-		position = getQuadra(interval / 0.4);
+		return getQuadra(interval / 0.4);
 	} else if (interval < 0.7) {
-		position = getQuadra((interval-0.4) / 0.3) * -0.6;
+		return getQuadra((interval-0.4) / 0.3) * -0.6;
 	} else if (interval < 0.9) {
-		position = getQuadra((interval-0.7) / 0.2) * 0.3;
-	} else {
-		position = getQuadra((interval-0.9) / 0.1) * -0.1;
+		return getQuadra((interval-0.7) / 0.2) * 0.3;
 	}
-
-	return position;
+	return getQuadra((interval-0.9) / 0.1) * -0.1;
 }
 
 
 export default class ScreenShake {
-    constructor(camera) {
+	constructor(camera) {
 
 		// When a function outside ScreenShake handle the camera, it should
 		// always check that enabled is false before.
@@ -66,7 +60,7 @@ export default class ScreenShake {
 			timestampEnd = timestampStart + milliseconds;
 			startPoint = new Vector3().copy(camera.position);
 			endPoint = new Vector3().addVectors(camera.position, vecToAdd);
-        };
+		};
 
 	}
 }
