@@ -46,7 +46,7 @@ The third argument is the duration of the shake in milliseconds.
 `npm i https://github.com/felixmariotto/three-screenshake`
 
 Because this is no ES6 Module, add this Shim to your bundler / `webpack.js`:
-```
+```javascript
 module.exports = {
   module: {
     rules: [
@@ -59,7 +59,7 @@ module.exports = {
 }
 ```
 Import and use as described:
-```
+```javascript
 import * as ScreenShake from "three-screenshake";
 ...
 ```
