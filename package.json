@@ -1,0 +1,22 @@
+{
+  "name": "three-screenshake",
+  "version": "1.0.0",
+  "description": "a screen shake tool for three.js",
+  "main": "ScreenShake.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixmariotto/three-screenshake.git"
+  },
+  "dependencies": {
+    "three": ">=0.83"
+  },
+  "keywords": [
+    "three.js"
+  ],
+  "author": "felixmariotto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixmariotto/three-screenshake/issues"
+  },
+  "homepage": "https://github.com/felixmariotto/three-screenshake#readme"
+}
