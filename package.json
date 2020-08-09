@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/felixmariotto/three-screenshake.git"
   },
+  "dependencies": {
+    "three": ">=0.83"
+  },
   "keywords": [
     "three.js"
   ],
